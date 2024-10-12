@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-alt {
+  background-color: #007bff;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.btn-alt:hover {
+  background-color: #0056b3;
+}
+
+.transaction-list {
+  margin-top: 20px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.file-btn {
+  display: inline-block;
+  padding: 8.5px 15px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.file-btn:hover {
+  background-color: #45a049;
+}
+
+.file-btn:active {
+  background-color: #3e8e41;
+}
+
+.file-btn:focus {
+  outline: none;
+}

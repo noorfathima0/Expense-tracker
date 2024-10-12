@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar: Summary -->
+        <aside class="sidebar">
+            <h2>Summary</h2>
+            <div class="card">
+                <p>Total Income</p>
+                <h3>$<span id="total-income">0</span></h3>
+            </div>
+            <div class="card">
+                <p>Total Expenses</p>
+                <h3>$<span id="total-expenses">0</span></h3>
+            </div>
+            <div class="card">
+                <p>Net Income</p>
+                <h3>$<span id="net-income">0</span></h3>
+            </div>
+        </aside>
+
+        <!-- Main Content: Transactions and Input -->
+        <main class="main-content">
+            <h1>Expense Tracker</h1>
+
+            <!-- Transaction Input Form -->
+            <div class="form">
+                <h2>Add Transaction</h2>
+                <input type="date" id="transaction-date" class="input" placeholder="Date">
+                <input type="text" id="transaction-desc" class="input" placeholder="Description">
+                <input type="text" id="transaction-category" class="input" placeholder="Category">
+                <input type="number" id="transaction-amount" class="input" placeholder="Amount">
+                <div class="button-group">
+                    <button id="add-income" class="btn">Add Income</button>
+                    <button id="add-expense" class="btn btn-alt">Add Expense</button>
+                </div>
+            </div>
+
+            <!-- Transaction List -->
+            <div class="transaction-list">
+                <h2>Transactions</h2>
+                <ul id="transaction-list"></ul>
+            </div>
+
+            <!-- Export/Import Section -->
+            <div class="button-group">
+                <button id="export-pdf" class="btn btn-alt">Export PDF</button> 
+                <label for="import-data" class="file-btn">Import Data</label>
+                <input type="file" id="import-data" accept=".json" style="display: none;">
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
