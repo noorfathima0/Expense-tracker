@@ -162,4 +162,3 @@ The **Modern Expense Tracker** is a simple yet powerful web application that hel
 
 ---
 
-### End of Report
